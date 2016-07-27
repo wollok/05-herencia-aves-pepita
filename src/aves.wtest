@@ -1,0 +1,30 @@
+import aves.*
+
+test "si vuela el petrel cuenta los kilómetros que voló" {
+	const unPetrel = new Petrel()
+	unPetrel.volar(10)
+	unPetrel.volar(20)
+	unPetrel.volar(10)
+	assert.equals(40, unPetrel.kilometrosVolados())
+}
+
+test "un ave come e incrementa 4 joules por gramo que come" {
+	const aveComun = new Ave()
+	aveComun.comer(10)
+	assert.equals(aveComun.energia(), 90)
+}
+
+test "una torcaza come igual que un ave pero vuela 1 kilómetro" {
+	const torcaza = new Torcaza()
+	torcaza.comer(10)
+	assert.equals(torcaza.energia(), 79)
+}
+
+test "la torcaza vuela igual que el ave comun" {
+	const kms = 10
+	const torcaza = new Torcaza()
+	torcaza.volar(kms)
+	const ave = new Ave()
+	ave.volar(kms)
+	assert.equals(ave.energia(), torcaza.energia())
+}
