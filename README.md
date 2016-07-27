@@ -1,6 +1,6 @@
 # Herencia de Aves
 
-<img src="img/birds.png" height="200" width="100">
+<img src="img/birds.png" height="150" width="500">
 
 En este ejercicio el comportamiento general de las aves es el siguiente:
 
