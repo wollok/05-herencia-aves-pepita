@@ -11,13 +11,13 @@ test "si vuela el petrel cuenta los kilómetros que voló" {
 test "un ave come e incrementa 4 joules por gramo que come" {
 	const aveComun = new Ave()
 	aveComun.comer(10)
-	assert.equals(aveComun.energia(), 90)
+	assert.equals(90, aveComun.energia())
 }
 
 test "una torcaza come igual que un ave pero vuela 1 kilómetro" {
 	const torcaza = new Torcaza()
 	torcaza.comer(10)
-	assert.equals(torcaza.energia(), 79)
+	assert.equals(79, torcaza.energia())
 }
 
 test "la torcaza vuela igual que el ave comun" {
