@@ -1,0 +1,11 @@
+import comida.*
+
+describe "comida" {
+	test "la manzana otorga 80 calorías" {
+		assert.equals(80, manzana.energia())
+	}
+	
+	test "el alpiste otorga 5 calorías" {
+		assert.equals(5, alpiste.energia())
+	}
+}

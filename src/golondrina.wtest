@@ -1,0 +1,15 @@
+import golondrinas.*
+import comida.*
+
+describe "Golondrina" {
+	var pepita = new Golondrina()
+	
+	test "la energia inicial de pepita es 100" {
+		assert.equals(100, pepita.energia())
+	}
+	
+	test "luego de comer la manzana pepita aumentó su energia" {
+		pepita.comer(manzana)
+		assert.equals(180, pepita.energia())
+	}
+}
