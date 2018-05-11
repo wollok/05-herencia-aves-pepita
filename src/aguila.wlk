@@ -8,4 +8,6 @@ class Aguila inherits Ave {
 	method caloriasPorMetro() = if (self.estaGorda()) 2 else 1
 	
 	method estaGorda() = self.energia() > 500
+
+	override method velocidad() = if (self.estaGorda()) 50 else 15
 }
