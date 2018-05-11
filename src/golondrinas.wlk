@@ -1,15 +1,8 @@
 import comida.*
+import ave.*
 
-class Golondrina {
-	var energia = 100
-	
-	method energia() = energia
-		
-	method volar(metros) {
+class Golondrina inherits Ave {
+	override method volar(metros) {
 		energia -= metros + 10 
-	}
-
-	method comer(comida) {
-		energia += comida.energia()
 	}
 }
