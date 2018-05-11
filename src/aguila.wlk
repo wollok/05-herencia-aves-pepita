@@ -21,3 +21,7 @@ class Aguila inherits Ave {
 	
 	override method estaCansada() = metrosDesdeLaUltimaComida > 1000
 }
+
+class AguilaDeLosAndes inherits Aguila {
+	override method velocidad() = super() * 2
+}

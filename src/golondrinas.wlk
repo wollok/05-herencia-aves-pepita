@@ -6,3 +6,7 @@ class Golondrina inherits Ave {
 	
 	override method estaCansada() = self.energia() < 50
 }
+
+class GolondrinaVaga inherits Golondrina {
+	override method estaCansada() = self.energia() < 150
+}
