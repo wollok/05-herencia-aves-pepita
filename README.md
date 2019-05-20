@@ -1,4 +1,7 @@
 # Pepita con Herencia
+ 
+[![Build Status](https://travis-ci.org/wollok/herenciaAvesPepita.svg?branch=master)](https://travis-ci.org/wollok/herenciaAvesPepita)
+
 
 ## 1) Roque, el entrenador
 Agregar a roque, entrenador de aves.
